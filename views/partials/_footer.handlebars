@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://localhost:5000/api/style1">
+    <style>
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            bottom: 0px;
+            z-index: 1000;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links li {
+            display: inline;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffcc00;
+        }
+
+        .footer-info {
+            font-size: 14px;
+            color: #bbb;
+            text-align: center;
+        }
+
+        .footer-links img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+
+        .footer-links img:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 1024px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+
+            .footer-info {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-links a {
+                font-size: 14px;
+            }
+
+            .footer-info {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .footer-links a {
+                font-size: 14px;
+            }
+
+            .footer-info {
+                font-size: 12px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Social Media Links -->
+        <ul class="footer-links">
+            <li><a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a></li>
+            <li><a href="https://wa.me" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a></li>
+            <li><a href="https://www.facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a></li>
+        </ul>
+
+        <!-- Footer Info -->
+        <div class="footer-info">
+            &copy; 2024 Contact Manager. All Rights Reserved.
+            <br>
+            Designed by [Your Name or Company Name]
+        </div>
+    </div>
+</footer>
+</html>

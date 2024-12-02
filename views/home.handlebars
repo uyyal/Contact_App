@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f7fb; /* Soft background color */
+            color: #333; /* Dark text color for readability */
+        }
+
+        /* Header Styles */
+        .header {
+             /* Bright and appealing blue background */
+            height: 80px;
+            color:  #007BFF;
+            padding: 1rem 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: scroll-left-right 10s linear infinite;
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        /* Keyframes for Scrolling Text (Left to Right) */
+        @keyframes scroll-left-right {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 1rem;
+            gap: 2rem;
+        }
+
+        .content {
+            flex: 1 1 400px;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .content:hover {
+            transform: translateY(-10px);
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #007BFF; /* Blue for emphasis */
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007BFF; /* Button color matches header */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(1);
+        }
+
+        /* Image Section */
+        .image-container {
+            flex: 1 1 400px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content, .image-container {
+                flex: 1 1 100%;
+            }
+
+            .content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Contact Manager</h1>
+    </header>
+
+    <main class="container">
+        <section class="image-container">
+            <img src="https://img.freepik.com/premium-vector/young-people-using-mobile-apps-data-analysis_130740-1867.jpg?w=2000" alt="Contact Management Illustration">
+        </section>
+        <section class="content">
+            <div class="hero">
+                <h2>Manage Your Contacts Efficiently</h2>
+                <p>
+                    Store, edit, and manage your contact information, including names, locations, 
+                    and contact types such as SIM, mobile, or email. Click "Get Started" to create a new contact!
+                </p>
+                <a href="/form" class="btn">Get Started</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
