@@ -1,6 +1,7 @@
 .contactlist {
     font-family: 'Arial', sans-serif;
     padding: 20px;
+    padding-bottom: 100px;
     max-width: 800px;
     margin: auto;
     color: #333;
@@ -45,7 +46,7 @@
     margin-bottom: 10px;
     font-weight: 500;
   }
-  
+ 
   .card-footer {
     display: flex;
     justify-content: center; /* Align buttons in a row */
@@ -90,10 +91,12 @@
   }
   
   .btn-delete {
-    background: linear-gradient(135deg, #dc3545, #a71d2a);
+    background-color: #333;
     color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   }
+
   
   .btn-delete:hover {
     background: linear-gradient(135deg, #a71d2a, #7f131f);

@@ -27,7 +27,16 @@
     <div class="card-footer">
       <span><a href="/api/contact/{{this._id}}" class="btn-info">Info</a></span>
       <span><a href="/api/edit/{{this._id}}" class="btn-edit">Edit</a></span>
-      <span><a href="/api/delete/{{this._id}}" class="btn-delete">Delete</a></span>
+     <span id="delicon">
+  <a href="/api/delete/{{this._id}}" class="btn-delete">
+    <lord-icon 
+      src="https://cdn.lordicon.com/qnhhgmwn.json" 
+      trigger="hover" 
+      style="width:23px;height:23px; vertical-align: middle;">
+    </lord-icon>
+    Delete
+  </a>
+</span>
 
     </div> 
     </div>
@@ -38,5 +47,7 @@
   {{/each}}
 
 </div>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 </body>
 </html>
