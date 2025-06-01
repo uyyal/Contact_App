@@ -55,7 +55,7 @@ app.get('/form',(req,res)=>{
 // How It Works:
 // All routes defined in the routing module will now be prefixed with /api.
 // Example: If routing has a route /contacts, it will be accessible at /api/contacts.
-app.use('/api',routing)
+app.use('https://contact-app-ypeu.onrender.com/api',routing)
 
 
 //Purpose: Starts the Express server and listens on the specified PORT
